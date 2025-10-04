@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
+    <!-- Game Display -->
     <com.protocomplete.etamagotchi.RenderView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_above="@+id/buttonContainer"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_weight="1" />
 
+    <!-- Buttons Container -->
     <LinearLayout
-        android:id="@+id/buttonContainer"
+        android:id="@+id/buttonLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="center"
+        android:weightSum="4">
 
         <Button
             android:id="@+id/feedButton"
@@ -45,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Stats" />
+
     </LinearLayout>
 
 </RelativeLayout>
