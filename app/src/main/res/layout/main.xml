@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.protocomplete.etamagotchi.RenderView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/feedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feed" />
+
+        <Button
+            android:id="@+id/careButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Care" />
+
+        <Button
+            android:id="@+id/battleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Battle" />
+
+        <Button
+            android:id="@+id/statsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stats" />
+    </LinearLayout>
+
+</RelativeLayout>
